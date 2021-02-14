@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #e4cfaf, #e4cfaf);
+  z-index: -1;
+  bottom: 0;
+}
+nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: black;
+}
+#dance {
+  grid-column: 1/3;
+  font-size: 25px;
+}
+.ocean {
+  justify-self: end;
+  height: 10vh;
+}
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.coffee {
+  height: 80%;
+  width: 70%;
+
+  position: relative;
+}
+.coffee img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lines {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 25px;
+  transform: translate(-1%, -110%);
+  color: white;
+  z-index: 3;
+}
+.coffee::after {
+  content: "";
+  background: black;
+  width: 100;
+  height: 100;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
